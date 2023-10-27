@@ -1,0 +1,156 @@
+.header {
+    margin-top: 20px;
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.nav {
+    display: flex;
+    gap: 60px;
+}
+
+.nav__link {
+    color: #3D3D3F;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+ 
+
+    &:hover {
+        color: #F35F2F;
+    }
+}
+
+.header__btn {
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 5px;
+    opacity: 0.85;
+    background: var(--Gd-color, linear-gradient(3deg, #F35F2F       -13.68%, rgba(243, 95, 47, 0.75) 121.16%));
+    padding: 12px 24px;
+}
+
+.header__info {
+    display: flex;
+    gap: 10px;
+}
+
+.nav__btn {
+    display: none;
+}
+
+.btn {
+    border: none;
+    background-color: #FFF;
+    display: none;
+}
+
+
+.menu {
+    display: none;
+}
+
+.exit {
+    display: none;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .nav {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu__exit {
+        display: none;
+    }
+
+    .exit__menu {
+        display: block;
+    }
+
+    .nav__blok {
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 10%;
+        background: linear-gradient(180deg, rgba(254, 252, 247, 0.50) 0%, #c7c6c2 55.94%);
+        top: 70px;
+        left: 0px;
+        border-radius: 8px;
+        animation: navblok 1s ease;
+
+        & > li {
+            line-height: 50px;
+            text-align: center;
+            margin-top: 20px;
+            animation: textlist 1.4s ease;
+        }
+
+        & > li > a {
+            font-size: 24px;
+            margin-right: 40px;
+            color: black;
+           
+          
+            &:hover {
+            text-decoration: overline;
+           }
+        }
+
+        @keyframes navblok {
+            
+            from {
+                transform: translateX(-60%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0%);
+                opacity: 1; 
+            }
+        }
+
+        @keyframes textlist {
+            from {
+                transform: translateX(400px);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateX(0%);
+                opacity: 1; 
+            } 
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .header__btn {
+        display: none;
+    }
+
+    .nav__btn {
+        display: inline-block;
+        white-space: nowrap;
+        text-align: center;
+    }
+}

@@ -1,0 +1,91 @@
+.hero {
+    margin-top: 100px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        color: #3D3D3F;
+        font-family: "Rubik";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        max-width: 515px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 42px;
+
+    }
+
+    &__text {
+        color:#3D3D3F;
+        font-family: "Rubik";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 525px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+
+    &__img {
+        max-width: 626px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.hero__btn {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1017px) {
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero__info {
+        order: 12;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .hero__img {
+        order: -12;
+    }
+} 
+
+@media only screen and (max-width: 650px) {
+    .hero__img {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .hero__heading {
+        font-size: 56px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero__img {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .hero__heading {
+        font-size: 40px;
+    }
+
+    .hero__text {
+        font-size: 16px;
+    }
+}

@@ -14,10 +14,8 @@
     padding-bottom: 10px;
     opacity: 0.9;
 }
-
-.us__form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.pop {
+    color: #0080FD;
 }
 
 .label {
@@ -34,40 +32,17 @@
 }
 
 .us__input {
-    color: #515155;
-    font-family: " DM Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    max-width: 343px;
-    width: 100%;
-    height: 52.378px;
-    flex-shrink: 0;
-    border-radius: 5px;
+    padding-left: 40px;
     background: #FFF;
-    box-shadow: 0px 4px 120px 0px rgba(0, 0, 0, 0.03);
-    border: 3px solid red;
-    padding-left: 10px;
+     max-width: 687px;
+     width: 100%;
+    height: 82px;
+    border-radius: 10px;
+    border: 1px solid #0080FD;
+    opacity: 0.2px;
+    
 }
 
-
-.textarea {
-    width: 719px;
-    display: inline-block;
-    border-radius: 5px;
-    background: #FFF;
-    box-shadow: 0px 4px 120px 0px rgba(0, 0, 0, 0.03);
-    padding: 20px;
-    padding-bottom: 99px;
-    color: #515155;
-    font-family: "DM Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border: 3px solid red;
-}
 
 .label__text {
     display: block;
@@ -75,12 +50,22 @@
 }
 
 .form__btn {
-    display: flex;
+    margin-top: -95px;
+    margin-right: 15px;
+    display: flex; 
     align-items: end;
     justify-content: end;
 }
 
+.mail {
+    margin-top: -100px;
+    margin-left: 5px;
+}
+
 .us__btn {
+
+    text-align: center;
+    padding-top: -10px;
     display: block;
 }
 

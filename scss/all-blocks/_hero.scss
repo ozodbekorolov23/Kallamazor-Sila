@@ -40,6 +40,10 @@
         
     }
 
+    .span11 {
+        color: #0080FD;
+    }
+
     &__text {
         font-style: normal;
         margin: 0;
@@ -72,6 +76,8 @@
     display: inline-block;
 }
 
+
+
 @media only screen and (max-width: 1017px) {
     .hero .container {
         flex-direction: column;
@@ -100,6 +106,8 @@
         margin-top: 50px;
         margin-right: 30px;
     }
+
+    
 } 
 
 @media only screen and (max-width: 651px) {
@@ -148,4 +156,11 @@
 
     
     
+}
+
+@media only screen and (max-width: 1227px) {
+    .heading {
+        display: block;
+        font-size: 22px;
+    }
 }

@@ -1,0 +1,40 @@
+.platform {
+    margin-top: 40px;
+
+    .timefull {
+       padding-bottom: 40px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1217px) {
+     
+    .timefull{
+      text-align: center;
+      padding-left: 20px;
+    }
+
+    .hero__info {
+        order: 12;
+        text-align: center;
+        margin-top: 80px;
+
+    }
+
+    .heading {
+        max-width: 496px;
+        text-align: center;
+        font-size: 42px;
+
+    }
+
+    // .hero__img {
+    //     order: -12;
+    // }
+    // .hero__btn1 {
+    //     margin-top: 50px;
+    //     margin-right: 30px;
+    // }
+} 

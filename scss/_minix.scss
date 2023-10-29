@@ -1,0 +1,13 @@
+@mixin Link {
+    color: var(--color-link);
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
